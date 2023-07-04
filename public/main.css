@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    border: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+        overflow: hidden;
+        height: -webkit-fill-available;
+    }
+}
+
+/* END OF BOILERPLATE */
+
+:root {
+    --main-theme-c: #141414;
+    --main-background-c: #ffffff;
+    --main-testing-c: #2aa156;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    overflow: auto;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(68,100,255);
+}
+
+#map {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1.78;
+}
+
+
+h1 {
+    font-weight: 300;
+    font-size: 4rem;
+    color: var(--main-theme-c);
+    margin: 0;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--main-theme-c);
+
+}

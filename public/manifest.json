@@ -1,0 +1,9 @@
+{
+  "name": "SliderDemo",
+  "short_name": "SliderDemo",
+  "theme_color": "#4463ff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/index.html"
+}
