@@ -3,7 +3,11 @@
   "short_name": "SliderDemo",
   "theme_color": "#4463ff",
   "background_color": "#ffffff",
+
+  "scope": "/animationShowcase/public/",
+  "start_url": "/animationShowcase/public/",
+
   "display": "standalone",
-  "orientation": "portrait",
-  "start_url": "/index.html"
+  "orientation": "portrait"
 }
+
