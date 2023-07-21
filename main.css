@@ -60,7 +60,7 @@ body {
     width: 100%;
     background-color: var(--main-background-c);
     visibility: visible;
-    overflow: auto;
+    overflow: scroll;
 }
 
 #home {

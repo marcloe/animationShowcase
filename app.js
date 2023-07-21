@@ -29,6 +29,19 @@ function switchToShowcase() {
 
 document.getElementById('startButton').addEventListener('click', switchToShowcase)
 
+//QuestionChanger
+/* 
+function infuseQuestion() {
+  if(questionCount == 1) {
+    questionBoard.innerHTML = "Do you feel in control of the situation"
+  }
+  if(questionCount == 2) {
+    questionBoard.innerHTML = "Do you feel in control of the situation"
+  }
+}
+
+ */
+
 //Animation Loader
 
 let animation1 = bodymovin.loadAnimation({
