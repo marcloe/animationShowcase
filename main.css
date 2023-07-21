@@ -25,13 +25,18 @@
     --main-testing-c: #2aa156;
 }
 
+html {
+    height: -webkit-fill-available;
+}
 
 body {
     font-family: 'Space Grotesk', sans-serif;
     margin: 0;
     padding: 0;
     background-color: hotpink;
-    height: 100vh;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
     width:100%;
     overscroll-behavior-y: none;
     height: 100%;
