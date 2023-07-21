@@ -1,7 +1,30 @@
+startPage = document.querySelectorAll(".wrapperhome").item(0);
+showCase = document.querySelectorAll(".wrapper").item(0);
+
+function switchToShowcase() {
+
+  if(getComputedStyle(showCase).visibility == "hidden" || "undefined") {
+      showCase.style.visibility = "visible";
+      startPage.style.visibility = "hidden";
+    }
+    else {
+      showCase.style.visibility = "hidden";
+      startPage.style.visibility = "visible"
+  }
+  console.log("click!")
+}
+
+
+document.getElementById('startButton').addEventListener('click', switchToShowcase)
+
+
+
+
+
 let animation = bodymovin.loadAnimation({
     // animationData: { /* ... */ },
     container: document.getElementById('map'), // required
-    path: 'data.json', // required
+    path: 'data1.json', // required
     renderer: 'svg', // required
     loop: false, // optional
     autoplay: false, // optional
