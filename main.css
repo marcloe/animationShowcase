@@ -39,7 +39,6 @@ body {
     min-height: -webkit-fill-available;
     width:100%;
     overscroll-behavior-y: none;
-    height: 100%;
     overflow: hidden;
 }
 
@@ -67,6 +66,7 @@ body {
     width: 100%;
     background-color: var(--main-background-c);
     visibility: visible;
+    overflow: hidden;
 }
 
 #home {
