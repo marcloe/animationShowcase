@@ -1,5 +1,10 @@
 // Navigation Logic
 
+document.body.addEventListener('touchmove', function(event) {
+  event.preventDefault();
+});
+
+
 startPage = document.querySelectorAll(".wrapperhome").item(0);
 showCase = document.querySelectorAll(".wrapper").item(0);
 question = document.getElementById('question');
