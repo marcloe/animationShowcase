@@ -1,3 +1,16 @@
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  // When ready, auto-scroll 1px to hide URL bar
+  window.addEventListener("load", function () {
+      // Set a timeout...
+      setTimeout(function () {
+          // Hide the address bar!
+          window.scrollTo(0, 1);
+      }, 0);
+  });
+}
+
+// Navigation Logic
+
 startPage = document.querySelectorAll(".wrapperhome").item(0);
 showCase = document.querySelectorAll(".wrapper").item(0);
 
@@ -14,14 +27,11 @@ function switchToShowcase() {
   console.log("click!")
 }
 
-
 document.getElementById('startButton').addEventListener('click', switchToShowcase)
 
+//Animation Loader
 
-
-
-
-let animation = bodymovin.loadAnimation({
+let animation1 = bodymovin.loadAnimation({
     // animationData: { /* ... */ },
     container: document.getElementById('map'), // required
     path: 'data1.json', // required
@@ -75,11 +85,11 @@ document.addEventListener('touchmove', e => {
         if (animFrame<1) {animFrame=1}
     }
     console.log(animFrame);
-    animation.goToAndStop(animFrame, true);
+    animation1.goToAndStop(animFrame, true);
 })
 
 document.addEventListener('touchend', e => {
     frozenFrame = animFrame;
     animFrame = 0;
-    animation.goToAndStop(frozenFrame, true);
+    animation1.goToAndStop(frozenFrame, true);
 })
