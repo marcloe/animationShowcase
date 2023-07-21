@@ -33,7 +33,7 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--main-background-c)
+    background-color: var(--main-background-c);
     min-height: 100vh;
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
