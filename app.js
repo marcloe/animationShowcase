@@ -1,4 +1,4 @@
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+/* if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
   // When ready, auto-scroll 1px to hide URL bar
   window.addEventListener("load", function () {
       // Set a timeout...
@@ -7,7 +7,7 @@ if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
           window.scrollTo(0, 1);
       }, 0);
   });
-}
+} */
 
 // Navigation Logic
 
