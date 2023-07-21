@@ -78,7 +78,8 @@ body {
     background-color: var(--main-background-c);
     visibility: visible;
     overflow: hidden;
-    color: red;
+    color: black;
+    font-weight: 500;
     padding: 10px;
     background-color:var(--main-background-c);
     z-index: +999;
