@@ -46,6 +46,7 @@ p {
 
 #button {
     background-color: var(--main-accent);
+    color: var(--main-font);
     width: 100%;
     font-weight: 500;
     font-size: 2em;
