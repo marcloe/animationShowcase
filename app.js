@@ -33,16 +33,6 @@ const pages = {
     return this[`p${goToPage.counter}`] || undefined},
 };
 
-//Contents: Button Texts
-
-const buttonContent = {
-  [0]: "Start",
-  [1]: 'How do you feel today?',
-  [2]: 'Is this a high-energy feeling?',
-  [3]: 'Do you feel in control of the situation?',
-  [4]: 'Restart showcase',
-};
-
 //Get Frame Count
 
 // Get the frame count of all JSON files
@@ -74,6 +64,24 @@ function handleResize() {
   currentPage = window[`page${goToPage.counter}`];
   currentPage.create();
 }
+
+//Handle Resizes
+
+function onResize() {
+  setupElements();
+  pages.current.create();
+  swipeEngine.update();
+}
+
+//Contents: Button Texts
+
+const buttonContent = {
+  [0]: "Start",
+  [1]: 'How do you feel today?',
+  [2]: 'Is this a high-energy feeling?',
+  [3]: 'Do you feel in control of the situation?',
+  [4]: 'Restart showcase',
+};
 
 //Inject ButtonText
 
@@ -485,14 +493,6 @@ const swipeEngine = (function () {
 
   }
 })();
-
-//Handle Resizes
-
-function onResize() {
-  setupElements();
-  pages.current.create();
-  swipeEngine.update();
-}
 
 // Add Event Listeners
 
