@@ -1,6 +1,6 @@
 //Mobile Web App for showcasing animations developed in semester 6 at University of the Arts Berlin
 
-//Create DOM Anchors
+//Making all DOM elements in initial HTLM accessible
 
 const containerElement = document.getElementById('container');
 const wrapperElement = document.getElementById('wrapper');
